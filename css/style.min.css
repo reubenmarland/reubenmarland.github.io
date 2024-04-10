@@ -248,7 +248,8 @@ main {
 .card {
     border: 2px solid black;
     width: calc(100%-1.25em);
-    height: 95%;
+    height: calc(95% - 1em);
+    margin-top: 1em;
 }
 
 .loader {
@@ -262,10 +263,11 @@ main {
     top: 40%;
     text-align: center;
     font-size: 64px;
-    border: 2px red solid;
 }
 
-.card-a .img {
+.card-a img {
+    width: auto;
+    height: 100%;
     object-fit: contain;
 }
 
