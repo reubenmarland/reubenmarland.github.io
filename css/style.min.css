@@ -32,10 +32,11 @@ body {
 
 .hero-content {
     color: var(--text);
-    width: calc((100% - 10px) / 1.5);
+    width: 100%;
     margin-left: auto;
     display: flex;
-    gap: 20px
+    gap: 20px;
+    justify-content: space-around;
 }
 
 .hero-col {
@@ -75,12 +76,6 @@ body {
     vertical-align: text-bottom
 }
 
-.project {
-    height: fit-content;
-    cursor: pointer;
-    width: calc(50% - 10px)
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -93,7 +88,7 @@ body {
     /* margin-top: 20em; */
     margin: 0 auto;
     justify-content: space-between;
-    width: calc(100% - 60px);
+    width: calc(100% - 95px);
     max-height: 200px;
     /* border-top: 2px solid black; */
 }
@@ -275,11 +270,7 @@ main {
 
 @media screen and (max-width: 1439px) {
     .loader {
-        width:calc((100% - 8px) / (10 / 7))
-    }
-
-    .hero-content {
-        width: calc((100% - 8px) / (10 / 7))
+        width:calc((100% - 100px))
     }
 
     .hero-col {
@@ -287,19 +278,7 @@ main {
     }
 
     .projects-counter,.align-right,.align-left {
-        width: calc((100% - 8px) / (10 / 7))
-    }
-
-    .render-header {
-        width: calc((100% - 8px) / (10 / 7))
-    }
-
-    .render-col {
-        width: calc((100% - 50px) / 3.5)
-    }
-
-    .render-images {
-        width: calc((100% - 12px) / (10 / 6))
+        width: calc((100% - 100px))
     }
 
     .footer-col {
@@ -313,11 +292,7 @@ main {
 
 @media screen and (max-width: 1209px) {
     .loader {
-        width:calc((100% - 6px) / (8 / 6))
-    }
-
-    .hero-content {
-        width: calc((100% - 6px) / (8 / 6))
+        width:calc((100% - 100px))
     }
 
     .hero-col {
@@ -325,41 +300,26 @@ main {
     }
 
     .projects-counter,.align-right,.align-left {
-        width: calc((100% - 6px) / (8 / 6))
-    }
-
-    .render-header {
-        width: calc((100% - 6px) / (8 / 6))
-    }
-
-    .render-col {
-        width: calc((100% - 40px) / 3)
-    }
-
-    .render-images {
-        width: calc((100% - 6px) / (8 / 6))
+        width: calc((100% - 100px))
     }
 
     .footer-col {
         width: calc((100% - 20px) / 2)
     }
 
-    .error-content {
-        width: calc((100% - 20px) / 2)
+    .project-list {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,500px);
     }
 }
 
 @media screen and (max-width: 979px) {
     .loader {
-        width:calc((100% - 4px) / (6 / 5))
+        width:calc((100% - 100px))
     }
 
     .availability {
         display: none;
-    }
-
-    .hero-content {
-        width: calc((100% - 4px) / (6 / 5))
     }
 
     .hero-col {
@@ -367,24 +327,12 @@ main {
     }
 
     .projects-counter,.align-right,.align-left {
-        width: calc((100% - 4px) / (6 / 5))
+        width: calc((100% - 100px))
     }
 
     .project-informations {
         flex-direction: column;
         gap: 0
-    }
-
-    .render-header {
-        width: calc((100% - 4px) / (6 / 5))
-    }
-
-    .render-col {
-        width: calc((100% - 30px) / 2.5)
-    }
-
-    .render-images {
-        width: 100%
     }
 
     .preview {
@@ -408,15 +356,16 @@ main {
         width: 50%;
         margin-left: auto
     }
+
+    .project-list {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(6,500px);
+    }
 }
 
 @media screen and (max-width: 749px) {
     .loader {
-        width:calc((100% - 5px) / (5 / 4))
-    }
-
-    .hero-content {
-        width: calc((100% - 5px) / (5 / 4))
+        width:calc((100% - 100px))
     }
 
     .hero-col {
@@ -424,37 +373,17 @@ main {
     }
 
     .projects-counter,.align-right,.align-left {
-        width: calc((100% - 5px) / (5 / 4))
-    }
-
-    .render-header {
-        width: calc((100% - 5px) / (5 / 4))
-    }
-
-    .render-col {
-        width: calc((100% - 20px) / 2)
-    }
-
-    .error-content {
-        width: calc((100% - 30px) / (5 / 2))
+        width: calc((100% - 100px))
     }
 }
 
 @media screen and (max-width: 634px) {
-    /* .loader {
-        padding:120px 20px 160px 20px
-    } */
-
     .loader {
         width: 100%
     }
 
     .hero {
         padding: 120px 20px 140px 20px
-    }
-
-    .hero-content {
-        width: 100%
     }
 
     .hero-col {
@@ -482,28 +411,8 @@ main {
         margin-top: 0!important
     }
 
-    .render {
-        padding: 120px 20px 160px 20px
-    }
-
-    .render-header {
-        width: 100%
-    }
-
-    .render-col {
-        width: calc((100% - 20px) / 2)
-    }
-
     .footer {
         padding: 20px
-    }
-
-    .error {
-        padding: 120px 20px 160px 20px
-    }
-
-    .error-content {
-        width: calc((100% - 20px) / 2)
     }
 
     .close {
@@ -540,6 +449,7 @@ main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12,500px);
     }
+
     .project-title {
         display: flex;
         justify-content: center;
@@ -547,6 +457,7 @@ main {
         padding: 50px !important;
         width: calc(100% - 100px);
     }
+
     .loader {
         top: 40%;
         left: 38.5%;
