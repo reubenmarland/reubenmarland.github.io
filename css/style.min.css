@@ -18,6 +18,26 @@ body {
     line-height: 18px;
 }
 
+.black-div {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 9999; /* Ensure it's on top */
+}
+
+.black-div-two {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    width: 100%;
+    top: calc(40% + 120px);
+    transform: translateY(-50%);
+    z-index: 9999; /* Ensure it's on top */
+}
+
 .overflow-hidden {
     overflow: hidden
 }
