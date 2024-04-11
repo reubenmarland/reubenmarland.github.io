@@ -109,6 +109,11 @@ body {
     width: 100%;
 }
 
+#proj-a-desc {
+    border: 1px red black;
+    z-index: 10000;
+}
+
 .footer {
     position: relative;
     bottom: 0;
@@ -280,18 +285,40 @@ main {
     margin: auto;
     margin-top: 1em;
     overflow: hidden;
+    transition: 0.5s ease;
 }
 
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 1;
-    transition: 1s;
 }
 
-.card img:hover {
+#proj-a-img {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#proj-a-img:hover {
     opacity: 0.2;
+    cursor: pointer;
+}
+
+.proj-column {
+    display: inline-block;
+    justify-content: center;
+}
+
+.proj-column>div {
+    position: relative;
+    overflow: hidden;
+}
+
+.proj-a-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+    cursor: default;
 }
 
 .card .text {
@@ -301,14 +328,9 @@ main {
   transform: translate(-50%, -50%);
   font-size: 16px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.5s;
+  opacity: 1;
   pointer-events: none;
 }
-
-.card:hover .text {
-    opacity: 1;
-  }
 
 .loader {
     max-width: calc(100vw - 0.25em);
@@ -550,8 +572,8 @@ main {
         display: block !important;
     }
 }
-/* 
-div {
+
+/* div {
     border: 1px solid black;
 }
 
