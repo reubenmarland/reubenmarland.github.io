@@ -74,7 +74,12 @@ body {
 .hero-line {
     will-change: transform;
     display: block;
-    transform: translate3d(0,2000px,0)
+    transform: translate3d(0,2000px,0);
+    cursor: default;
+}
+
+.pointer {
+    cursor: default;
 }
 
 .projects {
@@ -105,7 +110,7 @@ body {
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     display: flex !important;
     gap: 20px;
@@ -116,6 +121,7 @@ body {
     max-width: calc(100vw - 6em);
     width: 100%;
     max-height: 200px;
+    margin-top: -60px;
 }
 
 .footer-info {
@@ -133,13 +139,15 @@ body {
 
 .footer-wrapper {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-content: end;
 }
 
 .footer-links {
     text-decoration: none;
     cursor: default;
-    color: var(--text)
+    color: var(--text);
+    margin-bottom: 2px;
 }
 
 .copyright {
@@ -286,8 +294,8 @@ main {
     opacity: 0.2;
 }
 
-.card-a .text {
-    position: absolute;
+.card .text {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -295,6 +303,7 @@ main {
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s;
+  pointer-events: none;
 }
 
 .card:hover .text {
@@ -312,6 +321,10 @@ main {
     top: 40%;
     text-align: center;
     font-size: 64px;
+}
+
+.break-links {
+    display: none !important;
 }
 
 @media screen and (max-width: 2023px) {
@@ -425,13 +438,15 @@ main {
     }
 
     .footer-links {
-        width: fit-content
+        width: fit-content;
+        margin-top: 4px;
     }
 
     .copyright {
         width: 50%;
         margin-left: auto
     }
+    
 }
 
 @media screen and (max-width: 749px) {
@@ -508,6 +523,10 @@ main {
         width: 100%
     }
 
+    .projects {
+        margin-top: -156px;
+    }
+
     .project-title {
         display: flex;
         justify-content: center;
@@ -522,6 +541,13 @@ main {
     .footer {
         max-width: calc(100vw - 6em);
         width: 100%;
+        margin-top: -200px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .break-links {
+        display: block !important;
     }
 }
 /* 
