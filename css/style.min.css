@@ -75,11 +75,6 @@ body {
     will-change: transform;
     display: block;
     transform: translate3d(0,2000px,0);
-    cursor: default;
-}
-
-.pointer {
-    cursor: default;
 }
 
 .projects {
@@ -150,7 +145,6 @@ body {
 
 .footer-links {
     text-decoration: none;
-    cursor: default;
     color: var(--text);
     margin-bottom: 2px;
 }
@@ -174,7 +168,6 @@ body {
 .link-content {
     color: var(--text);
     text-decoration: none;
-    cursor: pointer
 }
 
 .link-underline {
@@ -294,7 +287,7 @@ main {
     object-fit: cover;
 }
 
-#proj-a-img {
+#proj-a-img, #proj-a-img-post {
     opacity: 1;
     transition: opacity 0.5s;
 }
@@ -303,6 +296,8 @@ main {
     opacity: 0.2;
     cursor: pointer;
 }
+
+
 
 .proj-column {
     display: inline-block;
@@ -318,7 +313,6 @@ main {
     will-change: transform;
     display: block;
     transform: translate3d(0,2000px,0);
-    cursor: default;
 }
 
 .card .text {
@@ -347,6 +341,14 @@ main {
 
 .break-links {
     display: none !important;
+}
+
+.default {
+    cursor: default;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 2023px) {
