@@ -104,7 +104,7 @@ body {
     width: 100%;
 }
 
-#proj-a-desc {
+#proja-desc {
     border: 1px red black;
     z-index: 10000;
 }
@@ -287,17 +287,197 @@ main {
     object-fit: cover;
 }
 
-#proj-a-img, #proj-a-img-post {
+#proja-img, #proja-img-post {
     opacity: 1;
     transition: opacity 0.5s;
 }
 
-#proj-a-img:hover {
+#proja-img:hover {
     opacity: 0.2;
     cursor: pointer;
 }
 
+.proja-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
 
+#projb-img, #projb-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projb-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projb-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projc-img, #projc-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projc-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projc-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projd-img, #projd-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projd-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projd-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#proje-img, #proje-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#proje-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.proje-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projf-img, #projf-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projf-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projf-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projg-img, #projg-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projg-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projg-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projh-img, #projh-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projh-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projh-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#proji-img, #proji-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#proji-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.proji-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projj-img, #projj-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projj-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projj-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projk-img, #projk-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projk-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projk-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
+
+#projl-img, #projl-img-post {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+#projl-img:hover {
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.projl-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
+}
 
 .proj-column {
     display: inline-block;
@@ -307,12 +487,6 @@ main {
 .proj-column>div {
     position: relative;
     overflow: hidden;
-}
-
-.proj-a-line {
-    will-change: transform;
-    display: block;
-    transform: translate3d(0,2000px,0);
 }
 
 .card .text {
@@ -567,6 +741,127 @@ main {
         width: 100%;
         margin-top: -200px;
     }
+
+    #proja-img, #proja-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #proja-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projb-img, #projb-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projb-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projc-img, #projc-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projc-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projd-img, #projd-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projd-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #proje-img, #proje-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #proje-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projf-img, #projf-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projf-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projg-img, #projg-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projg-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projh-img, #projh-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projh-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #proji-img, #proji-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #proji-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projj-img, #projj-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projj-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projk-img, #projk-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projk-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
+    #projl-img, #projl-img-post {
+        opacity: 1;
+        transition: none;
+    }
+    
+    #projl-img:hover {
+        opacity: 1;
+        cursor: default;
+    }
+
 }
 
 @media screen and (max-width: 405px) {
