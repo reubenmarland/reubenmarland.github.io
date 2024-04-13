@@ -18,6 +18,10 @@ body {
     line-height: 18px;
 }
 
+#bodyHide {
+    overflow: hidden;
+}
+
 .black-div {
     position: fixed;
     background-color: rgb(255, 255, 255);
@@ -691,7 +695,7 @@ main {
     }
 
     .projects {
-        padding: 120px 20px 160px 20px
+        padding: 120px 20px 100px 20px
     }
 
     .projects-counter,.align-right,.align-left,.project {
@@ -722,7 +726,7 @@ main {
     }
 
     .projects {
-        margin-top: -156px;
+        margin-top: -200px;
     }
 
     .project-title {
