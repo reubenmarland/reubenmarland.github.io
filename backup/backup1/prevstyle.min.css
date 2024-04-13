@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "TGH-Bold";
+    src: url(../fonts/TeXGyreHeros-Bold.otf) format("truetype")
+}
+
 :root {
     --text: #000;
     --main: #ffffff;
@@ -8,48 +13,13 @@
 body {
     background: var(--main);
     color: var(--text);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "TGH-Bold";
     font-size: 16px;
     line-height: 18px;
 }
 
-.overflow-hidden {
-    overflow: hidden
-}
-
-.default {
-    cursor: default;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
 #bodyHide {
     overflow: hidden;
-}
-
-.animate-line {
-    will-change: transform;
-    display: block;
-    transform: translate3d(0,2000px,0);
-}
-
-.line-divide {
-    margin-top: 16px
-}
-
-.loader {
-    max-width: calc(100vw - 0.25em);
-    box-sizing: border-box;
-    position: fixed;
-    margin: 0 auto;
-    padding: 0;
-    width: calc(100%);
-    height: 200px;
-    top: 40%;
-    text-align: center;
-    font-size: 64px;
 }
 
 .loader-cover-one {
@@ -57,9 +27,9 @@ body {
     background-color: rgb(255, 255, 255);
     height: 150px;
     width: 100%;
-    top: 40.2%;
+    top: 40.3%;
     transform: translateY(-50%);
-    z-index: 9999;
+    z-index: 9999; /* Ensure it's on top */
 }
 
 .loader-cover-two {
@@ -69,35 +39,15 @@ body {
     width: 100%;
     top: calc(40% + 120px);
     transform: translateY(-50%);
-    z-index: 9999;
+    z-index: 9999; /* Ensure it's on top */
 }
 
-.logo {
-    opacity: 0;
-    pointer-events: none;
-    position: relative;
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--main);
-    display: flex;
-    z-index: 9999;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: -60px;
+.overflow-hidden {
+    overflow: hidden
 }
 
-.logo-underlay {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    z-index: 500;
-    top: 0;
-}
-
-main {
-    margin-bottom: 100px;
+.line-divide {
+    margin-top: 16px
 }
 
 .hero {
@@ -125,8 +75,10 @@ main {
     overflow: hidden
 }
 
-.hero-rhs {
-    text-align: right;
+.hero-line {
+    will-change: transform;
+    display: block;
+    transform: translate3d(0,2000px,0);
 }
 
 .projects {
@@ -147,6 +99,180 @@ main {
     vertical-align: text-bottom
 }
 
+.project-title {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    padding: 1em 0;
+    max-width: calc(100vw -2em);
+    width: 100%;
+}
+
+#proja-desc {
+    border: 1px red black;
+    z-index: 10000;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    display: flex !important;
+    gap: 20px;
+    align-items: flex-end;
+    padding: 20px 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: calc(100vw - 6em);
+    width: 100%;
+    max-height: 200px;
+    margin-top: -60px;
+}
+
+.footer-info {
+    display: block !important;
+}
+
+.footer div {
+    display: flex;
+    align-content: end;
+}
+
+.footer-col {
+    width: calc((100% - 100px) / 6);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: end;
+}
+
+.footer-links {
+    text-decoration: none;
+    color: var(--text);
+    margin-bottom: 2px;
+}
+
+.copyright {
+    width: calc((100% - 20px) / 2);
+    text-align: right;
+    justify-content: right;
+}
+
+.link {
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    height: 14px;
+    text-transform: uppercase;
+    pointer-events: all;
+    user-select: none;
+}
+
+.link-content {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.link-underline {
+    height: 1px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    will-change: transform;
+    transform: translate3d(-100%,0,0);
+    pointer-events: none;
+    user-select: none
+}
+
+.availability {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    z-index: 9999;
+    opacity: 0
+}
+
+.overlay-top {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    z-index: 500;
+    top: 0;
+}
+
+.logo {
+    opacity: 0;
+    pointer-events: none;
+    position: relative;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--main);
+    display: flex;
+    z-index: 9999;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: -60px;
+}
+
+.horizontal,.vertical {
+    z-index: 100;
+    position: fixed;
+    max-width: calc(100vw - 6em);
+    max-height: calc(100vh - 6em);
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0)
+}
+
+.horizontal {
+    width: 60px
+}
+
+.marker-horizontal {
+    display: block;
+    will-change: transform;
+    transform: translate3d(-100%,0,0);
+    height: 1px;
+    background: var(--secondary);
+    max-width: calc(100vw -6em);
+    width: 100%
+}
+
+.vertical {
+    height: 60px
+}
+
+.marker-vertical {
+    display: block;
+    will-change: transform;
+    transform: translate3d(0,-100%,0);
+    max-height: calc(100vh -6em);
+    height: 100%;
+    background: var(--secondary);
+    max-width: (100vw - 6em);
+    width: 1px
+}
+
+.footer {
+    background-color: white;
+}
+
+.rhs {
+    text-align: right;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
 .card {
     border: 2px solid black;
     max-width: 312px;
@@ -163,17 +289,6 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.card .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 16px;
-    text-align: center;
-    opacity: 1;
-    pointer-events: none;
 }
 
 #proja-img, #proja-img-post {
@@ -378,79 +493,40 @@ main {
     overflow: hidden;
 }
 
-.footer {
-    position: relative;
-    bottom: 0;
-    display: flex !important;
-    gap: 20px;
-    align-items: flex-end;
-    padding: 20px 40px;
+.card .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  text-align: center;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.loader {
+    max-width: calc(100vw - 0.25em);
+    box-sizing: border-box;
+    position: fixed;
     margin: 0 auto;
-    justify-content: space-between;
-    max-width: calc(100vw - 6em);
-    width: 100%;
-    max-height: 200px;
-    margin-top: -60px;
-    background-color: white;
+    padding: 0;
+    width: calc(100%);
+    height: 200px;
+    top: 40%;
+    text-align: center;
+    font-size: 64px;
 }
 
-.footer-col {
-    width: calc((100% - 100px) / 6);
-}
-
-.footer-info {
-    display: block !important;
-}
-
-.footer div {
-    display: flex;
-    align-content: end;
-}
-
-.footer-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-content: end;
-}
-
-.footer-links {
-    text-decoration: none;
-    color: var(--text);
-    margin-bottom: 2px;
-}
-
-.link {
-    width: fit-content;
-    position: relative;
-    overflow: hidden;
-    height: 14px;
-    pointer-events: all;
-    user-select: none;
-}
-
-.links-line-break {
+.break-links {
     display: none !important;
 }
 
-.link-content {
-    color: var(--text);
-    text-decoration: none;
+.default {
+    cursor: default;
 }
 
-.link-underline {
-    height: 1px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    pointer-events: none;
-    user-select: none
-}
-
-.copyright {
-    width: calc((100% - 20px) / 2);
-    text-align: right;
-    justify-content: right;
+.pointer {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 2023px) {
@@ -469,21 +545,30 @@ main {
         width: calc((100% - 3em) / 3.5)
     }
 
+    .project-title {
+        max-width: calc(100vw -2em) !important;
+        width: 100% !important;
+    }
+
+    .projects-counter,.align-right,.align-left {
+        width: calc((100vw - 6em))
+    }
+
+    .footer-col {
+        width: calc((100% - 4.5em) / 4)
+    }
+
+    .error-content {
+        width: calc((100% - 30px) / 2.5)
+    }
+
     .hero-add {
         display: none !important;
     }
 
-    .projects-counter{
-        width: calc((100vw - 6em))
-    }
-
     .footer {
-            max-width: calc(100vw - 6em);
-            width: 100%;
-        }
-
-    .footer-col {
-        width: calc((100% - 4.5em) / 4)
+        max-width: calc(100vw - 6em);
+        width: 100%;
     }
 }
 
@@ -496,17 +581,17 @@ main {
         width: calc((100% - 40px) / 3)
     }
 
-    .projects-counter {
+    .projects-counter,.align-right,.align-left {
         width: calc((100% - 100px))
+    }
+
+    .footer-col {
+        width: calc((100% - 20px) / 2)
     }
 
     .footer {
         max-width: calc(100vw - 6em);
         width: 100%;
-    }
-
-    .footer-col {
-        width: calc((100% - 20px) / 2)
     }
 }
 
@@ -522,12 +607,25 @@ main {
         max-width: calc(100vw - 0.25em);
     }
 
+    .availability {
+        display: none;
+    }
+
     .hero-col {
         width: calc((100% - 30px) / 2.5)
     }
 
-    .projects-counter {
+    .projects-counter,.align-right,.align-left {
         width: calc((100% - 60px))
+    }
+
+    .project-informations {
+        flex-direction: column;
+        gap: 0
+    }
+
+    .preview {
+        display: none
     }
 
     .footer {
@@ -562,7 +660,7 @@ main {
         width: calc((100% - 20px) / 2)
     }
 
-    .projects-counter {
+    .projects-counter,.align-right,.align-left {
         width: calc((100% - 100px))
     }
 
@@ -573,13 +671,13 @@ main {
 }
 
 @media screen and (max-width: 660px) {
+    .break-line {
+        display: none;
+    }
+  
     .project-list {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12,27em);
-    }
-
-    .break-line {
-        display: none;
     }
 }
 
@@ -600,21 +698,25 @@ main {
         padding: 120px 20px 100px 20px
     }
 
-    .projects-counter {
+    .projects-counter,.align-right,.align-left,.project {
         width: 100%
+    }
+
+    .align-right,.align-left {
+        flex-direction: column
     }
 
     .footer {
         max-width: calc(100vw - 6em);
         width: 100%;
     }
+
+    .close {
+        right: 20px
+    }
 }
 
 @media screen and (max-width: 479px) {
-    .loader {
-            max-width: calc(100vw - 0.25em);
-        }
-
     .hero-content {
         flex-direction:column
     }
@@ -632,6 +734,10 @@ main {
         justify-content: center;
         font-size: 36px;
         width: 100%;
+    }
+
+    .loader {
+        max-width: calc(100vw - 0.25em);
     }
 
     .footer {
@@ -763,7 +869,19 @@ main {
 }
 
 @media screen and (max-width: 405px) {
-    .links-line-break {
+    .break-links {
         display: block !important;
     }
 }
+
+/* div {
+    border: 1px solid black;
+}
+
+footer {
+    border: 1px solid red;
+}
+
+.loader {
+    border: 1px solid red;
+} */

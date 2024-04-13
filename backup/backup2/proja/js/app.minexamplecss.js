@@ -1,3 +1,4 @@
+document.getElementById('css-code').textContent = `
 :root {
     --text: #000;
     --main: #ffffff;
@@ -424,6 +425,7 @@ main {
     position: relative;
     overflow: hidden;
     height: 14px;
+    text-transform: uppercase;
     pointer-events: all;
     user-select: none;
 }
@@ -440,9 +442,12 @@ main {
 .link-underline {
     height: 1px;
     width: 100%;
+    background: #000;
     position: absolute;
     bottom: 0;
     left: 0;
+    will-change: transform;
+    transform: translate3d(-100%,0,0);
     pointer-events: none;
     user-select: none
 }
@@ -766,4 +771,4 @@ main {
     .links-line-break {
         display: block !important;
     }
-}
+}`;

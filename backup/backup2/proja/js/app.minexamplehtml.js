@@ -1,3 +1,4 @@
+document.getElementById('html-code').textContent = `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,7 +101,7 @@
         <div class="project-list">
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proja-click"><img src="../img/project_portfolio.png" alt="" id="proja-img">
+            <div class="card" id="proja-click"><img src="img/project_portfolio.png" alt="" id="proja-img">
               <div class="text default proj-column">
                 <div>
                   <span class="proja-line default">PROJECT 1:</span>
@@ -116,7 +117,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projb-click"><img src="../img/project_portfolio.png" alt="" id="projb-img">
+            <div class="card" id="projb-click"><img src="img/project_portfolio.png" alt="" id="projb-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projb-line default">PROJECT 2:</span>
@@ -132,7 +133,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projc-click"><img src="../img/project_portfolio.png" alt="" id="projc-img">
+            <div class="card" id="projc-click"><img src="img/project_portfolio.png" alt="" id="projc-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projc-line default">PROJECT 3:</span>
@@ -148,7 +149,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projd-click"><img src="../img/project_portfolio.png" alt="" id="projd-img">
+            <div class="card" id="projd-click"><img src="img/project_portfolio.png" alt="" id="projd-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projd-line default">PROJECT 4:</span>
@@ -164,7 +165,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proje-click"><img src="../img/project_portfolio.png" alt="" id="proje-img">
+            <div class="card" id="proje-click"><img src="img/project_portfolio.png" alt="" id="proje-img">
               <div class="text default proj-column">
                 <div>
                   <span class="proje-line default">PROJECT 5:</span>
@@ -180,7 +181,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projf-click"><img src="../img/project_portfolio.png" alt="" id="projf-img">
+            <div class="card" id="projf-click"><img src="img/project_portfolio.png" alt="" id="projf-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projf-line default">PROJECT 6:</span>
@@ -196,7 +197,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projg-click"><img src="../img/project_portfolio.png" alt="" id="projg-img">
+            <div class="card" id="projg-click"><img src="img/project_portfolio.png" alt="" id="projg-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projg-line default">PROJECT 7:</span>
@@ -212,7 +213,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projh-click"><img src="../img/project_portfolio.png" alt="" id="projh-img">
+            <div class="card" id="projh-click"><img src="img/project_portfolio.png" alt="" id="projh-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projh-line default">PROJECT 8:</span>
@@ -228,7 +229,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proji-click"><img src="../img/project_portfolio.png" alt="" id="proji-img">
+            <div class="card" id="proji-click"><img src="img/project_portfolio.png" alt="" id="proji-img">
               <div class="text default proj-column">
                 <div>
                   <span class="proji-line default">PROJECT 9:</span>
@@ -244,7 +245,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projj-click"><img src="../img/project_portfolio.png" alt="" id="projj-img">
+            <div class="card" id="projj-click"><img src="img/project_portfolio.png" alt="" id="projj-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projj-line default">PROJECT 10:</span>
@@ -260,7 +261,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projk-click"><img src="../img/project_portfolio.png" alt="" id="projk-img">
+            <div class="card" id="projk-click"><img src="img/project_portfolio.png" alt="" id="projk-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projk-line default">PROJECT 11:</span>
@@ -276,7 +277,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projl-click"><img src="../img/project_portfolio.png" alt="" id="projl-img">
+            <div class="card" id="projl-click"><img src="img/project_portfolio.png" alt="" id="projl-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projl-line default">PROJECT 12:</span>
@@ -325,4 +326,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/CustomEase.min.js"></script>
     <script src="./js/app.min.js"></script>
 </body>
-</html>
+</html>`;

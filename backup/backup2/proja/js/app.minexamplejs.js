@@ -1,3 +1,4 @@
+document.getElementById('js-code').textContent = `
 gsap.config({
     nullTargetWarn: !1
 });
@@ -26,7 +27,7 @@ var loadPage = {
         function disableScroll() {
             var scrollPosition = window.scrollY;
             document.body.style.position = 'fixed';
-            document.body.style.top = `-${scrollPosition}px`;
+            document.body.style.top = \`-\${scrollPosition}px\`;
           }
         disableScroll();
         loadPage.loader()
@@ -135,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }).to({}, {
             duration: 0,
             onComplete: function() {
-                window.location.href = cardId + "/" + cardId + ".html";
+                window.location.href = cardId + ".html";
             }
         });
 
@@ -264,4 +265,4 @@ document.addEventListener("DOMContentLoaded", function() {
     cardIDs.forEach(function(cardID) {
         createTimelines(cardID);
     });
-})
+})`;
