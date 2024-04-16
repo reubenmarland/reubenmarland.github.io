@@ -1,3 +1,4 @@
+document.getElementById('css-code').textContent = `
 :root {
     --text: #000;
     --main: #ffffff;
@@ -8,7 +9,7 @@
 body {
     background: var(--main);
     color: var(--text);
-    font-family: 'Times New Roman', Times, serif !important;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     line-height: 18px;
 }
@@ -72,28 +73,19 @@ body {
     z-index: 9999;
 }
 
-.availability {
-    position: relative;
-    top: 20px;
-    left: 40px;
-    z-index: 9999;
-    opacity: 1;
-    border: 1px solid red;
-}
-
-.header {
-    display: flex;
-    justify-content: space-around;
-}
-
 .logo {
     opacity: 0;
     pointer-events: none;
+    position: relative;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
     background: var(--main);
     display: flex;
     z-index: 9999;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: -60px;
 }
 
 .logo-underlay {
@@ -103,11 +95,6 @@ body {
     background-color: white;
     z-index: 500;
     top: 0;
-}
-
-#go-home {
-    cursor: pointer;
-    pointer-events: all;
 }
 
 main {
@@ -159,10 +146,6 @@ main {
     width: 1em;
     fill: var(--secondary);
     vertical-align: text-bottom
-}
-
-.project-title {
-    font-size: 20px;
 }
 
 .card {
@@ -442,6 +425,7 @@ main {
     position: relative;
     overflow: hidden;
     height: 14px;
+    text-transform: uppercase;
     pointer-events: all;
     user-select: none;
 }
@@ -453,16 +437,17 @@ main {
 .link-content {
     color: var(--text);
     text-decoration: none;
-    cursor: pointer;
-    pointer-events: all;
 }
 
 .link-underline {
     height: 1px;
     width: 100%;
+    background: #000;
     position: absolute;
     bottom: 0;
     left: 0;
+    will-change: transform;
+    transform: translate3d(-100%,0,0);
     pointer-events: none;
     user-select: none
 }
@@ -786,4 +771,4 @@ main {
     .links-line-break {
         display: block !important;
     }
-}
+}`;

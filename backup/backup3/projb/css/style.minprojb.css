@@ -39,15 +39,6 @@ body {
     margin-top: 16px
 }
 
-.availability {
-    position: relative;
-    top: 20px;
-    left: 40px;
-    z-index: 9999;
-    opacity: 1;
-    border: 1px solid red;
-}
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -108,6 +99,34 @@ main {
 
 .hero-rhs {
     text-align: right;
+}
+
+.code-grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr) !important;
+    grid-template-rows: 27em !important;
+    gap: 3em;
+    padding: 0 1.5em;
+    justify-content: center;
+}
+
+code {
+    overflow: auto;
+}
+
+.tab-pane {
+    margin-top: -445px; 
+    height: 30em;
+    width: 70%;
+    overflow: auto;
+    border: 2px solid #f3f3f3;
+    background-color: #f3f3f3;
+}
+
+#myTabContent {
+    width: calc(100vw);
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
@@ -187,13 +206,6 @@ main {
     justify-content: right;
 }
 
-@media screen and (max-width: 2023px) {
-    .project-list {
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(4,27em);
-    }
-}
-
 @media screen and (max-width: 1439px) {
     .hero-col {
         width: calc((100% - 3em) / 3.5)
@@ -232,6 +244,7 @@ main {
     .hero-col {
         width: calc((100% - 30px) / 2.5)
     }
+
     .footer {
         align-items: flex-start;
         flex-wrap: wrap;
@@ -301,7 +314,6 @@ main {
         width: 100%;
         margin-top: -200px;
     }
-
 }
 
 @media screen and (max-width: 405px) {

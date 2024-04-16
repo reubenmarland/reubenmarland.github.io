@@ -1,3 +1,4 @@
+document.getElementById('html-code').textContent = `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,16 +25,8 @@
     <div>
       <div class="logo-underlay">
       </div>
-      <div class="header logo">
-        <div class="">
-          <strong><a href="mailto:reubenuk@hotmail.co.uk" class="link-content">Contact</a></strong>
-        </div>
-        <div class="default">
-          <strong>Reuben Marland</strong>
-        </div>
-        <div class="">
-          <strong><span id="go-home">Home</span></strong>
-        </div>
+      <div class="logo default">
+        <strong>Reuben Marland</strong>
       </div>
     </div>
     <main>
@@ -108,120 +101,192 @@
         <div class="project-list">
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proja-click"><img src="./img/proja_card.png" alt="" id="proja-img">
+            <div class="card" id="proja-click"><img src="img/project_portfolio.png" alt="" id="proja-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="proja-line default project-title">Digital Twin for Agri-tech</span>
+                  <span class="proja-line default">PROJECT 1:</span>
+                </div>
+                <div>
+                  <span class="proja-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="proja-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projb-click"><img src="./img/projb_card.png" alt="" id="projb-img">
+            <div class="card" id="projb-click"><img src="img/project_portfolio.png" alt="" id="projb-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projb-line default project-title">Portfolio Website</span>
+                  <span class="projb-line default">PROJECT 2:</span>
+                </div>
+                <div>
+                  <span class="projb-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projb-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projc-click"><img src="./img/projc_card.jpg" alt="" id="projc-img">
+            <div class="card" id="projc-click"><img src="img/project_portfolio.png" alt="" id="projc-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projc-line default project-title">Feasibility Report on SAFs</span>
+                  <span class="projc-line default">PROJECT 3:</span>
+                </div>
+                <div>
+                  <span class="projc-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projc-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projd-click"><img src="./img/projd_card.jpg" alt="" id="projd-img">
+            <div class="card" id="projd-click"><img src="img/project_portfolio.png" alt="" id="projd-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projd-line default project-title">Shape Drawing 2DoF Robotic Arm</span>
+                  <span class="projd-line default">PROJECT 4:</span>
+                </div>
+                <div>
+                  <span class="projd-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projd-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proje-click"><img src="./img/proje_card.png" alt="" id="proje-img">
+            <div class="card" id="proje-click"><img src="img/project_portfolio.png" alt="" id="proje-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="proje-line default project-title">Business Pitch for Food App</span>
+                  <span class="proje-line default">PROJECT 5:</span>
+                </div>
+                <div>
+                  <span class="proje-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="proje-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projf-click"><img src="./img/projf_card.png" alt="" id="projf-img">
+            <div class="card" id="projf-click"><img src="img/project_portfolio.png" alt="" id="projf-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projf-line default project-title">Production Optmisation for a Door Damper:</span>
+                  <span class="projf-line default">PROJECT 6:</span>
+                </div>
+                <div>
+                  <span class="projf-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projf-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projg-click"><img src="./img/projg_card.png" alt="" id="projg-img">
+            <div class="card" id="projg-click"><img src="img/project_portfolio.png" alt="" id="projg-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projg-line default project-title">Design of a Bespoke E-Reader</span>
+                  <span class="projg-line default">PROJECT 7:</span>
+                </div>
+                <div>
+                  <span class="projg-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projg-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projh-click"><img src="./img/projh_card.png" alt="" id="projh-img">
+            <div class="card" id="projh-click"><img src="img/project_portfolio.png" alt="" id="projh-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projh-line default project-title">Ethical Business Assesment</span>
+                  <span class="projh-line default">PROJECT 8:</span>
+                </div>
+                <div>
+                  <span class="projh-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projh-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proji-click"><img src="./img/proji_card.png" alt="" id="proji-img">
+            <div class="card" id="proji-click"><img src="img/project_portfolio.png" alt="" id="proji-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="proji-line default project-title">Fluid-dynamics Models</span>
+                  <span class="proji-line default">PROJECT 9:</span>
+                </div>
+                <div>
+                  <span class="proji-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="proji-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projj-click"><img src="./img/projj_card.png" alt="" id="projj-img">
+            <div class="card" id="projj-click"><img src="img/project_portfolio.png" alt="" id="projj-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projj-line default project-title">Dynamics and Control Models</span>
+                  <span class="projj-line default">PROJECT 10:</span>
+                </div>
+                <div>
+                  <span class="projj-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projj-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projk-click"><img src="./img/projk_card.JPG" alt="" id="projk-img">
+            <div class="card" id="projk-click"><img src="img/project_portfolio.png" alt="" id="projk-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projk-line default project-title">Applied Solid Mechanics Analysis</span>
+                  <span class="projk-line default">PROJECT 11:</span>
+                </div>
+                <div>
+                  <span class="projk-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projk-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projl-click"><img src="./img/projl_card.png" alt="" id="projl-img">
+            <div class="card" id="projl-click"><img src="img/project_portfolio.png" alt="" id="projl-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projl-line default project-title">Design of a Convertible Car Roof</span>
+                  <span class="projl-line default">PROJECT 12:</span>
+                </div>
+                <div>
+                  <span class="projl-line default">experiential design, he has a special</span>
+                </div>
+                <div>
+                  <span class="projl-line default">experiential design, he has a special</span>
                 </div>
               </div>
             </div>
@@ -259,9 +324,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/CustomEase.min.js"></script>
-    <script src="./js/app.minloader.js"></script>
-    <script src="./js/app.gohome.js"></script>
-    <script src="./js/app.projcard.js"></script>
-
+    <script src="./js/app.min.js"></script>
 </body>
-</html>
+</html>`;
