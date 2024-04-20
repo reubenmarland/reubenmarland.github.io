@@ -288,6 +288,10 @@ main {
 }
 
 @media screen and (max-width: 479px) {
+    .logo-underlay {
+        height: 30px;
+    }
+
     .hero-content {
         flex-direction:column
     }
@@ -297,14 +301,16 @@ main {
     }
 
     .footer {
-        max-width: calc(100vw - 6em);
+        max-width: calc(100vw - 4em);
         width: 100%;
+        margin: 0 auto;
         margin-top: -200px;
+        padding: 0;
     }
 
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 378px) {
     .links-line-break {
         display: block !important;
     }

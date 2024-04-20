@@ -634,6 +634,14 @@ main {
     .loader {
             max-width: calc(100vw - 0.25em);
         }
+    
+    .logo-underlay {
+        height: 30px;
+    }
+
+    .project-title {
+        font-size: 24px !important;
+    }
 
     .hero-content {
         flex-direction:column
@@ -655,9 +663,11 @@ main {
     }
 
     .footer {
-        max-width: calc(100vw - 6em);
+        max-width: calc(100vw - 4em);
         width: 100%;
+        margin: 0 auto;
         margin-top: -200px;
+        padding: 0;
     }
 
     #proja-img, #proja-img-post {
@@ -782,7 +792,7 @@ main {
 
 }
 
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 378px) {
     .links-line-break {
         display: block !important;
     }
