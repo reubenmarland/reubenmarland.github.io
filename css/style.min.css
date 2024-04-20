@@ -128,7 +128,7 @@ main {
 }
 
 .hero-col {
-    width: calc((100% - 60px) / 6);
+    width: calc((100% - 60px) / 5);
     min-width: 210px;
     display: inline-block;
     justify-content: left;
