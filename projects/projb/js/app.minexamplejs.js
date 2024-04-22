@@ -1,3 +1,4 @@
+document.getElementById('js-code').textContent = `
 document.addEventListener("DOMContentLoaded", function() {
     CustomEase.create("easeOutExpo", "0.16, 1, 0.3, 1");
     CustomEase.create("easeInExpo", "0.7, 0, 0.84, 0");
@@ -40,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }).to({}, {
             duration: 0,
             onComplete: function() {
-                window.location.href = "../projects/" + cardId + "/" + cardId + ".html";
+                window.location.href = "../" + cardId + "/" + cardId + ".html";
             }
         });
 
@@ -170,3 +171,4 @@ document.addEventListener("DOMContentLoaded", function() {
         createTimelines(cardID);
     });
 })
+`;

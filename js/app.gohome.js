@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }).to({}, {
         duration: 0,
         onComplete: function() {
-            window.location.href = "../Home/home.html";
+            window.location.href = "../../Home/home.html";
         }
     });
 

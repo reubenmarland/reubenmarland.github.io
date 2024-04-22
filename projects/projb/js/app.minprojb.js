@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }).to({}, {
             duration: 0,
             onComplete: function() {
-                window.location.href = "../projects/" + cardId + "/" + cardId + ".html";
+                window.location.href = cardId + ".html";
             }
         });
 
@@ -131,10 +131,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             projImg.setAttribute("id", cardId + "-img-post")
             document.body.style.overflow = "hidden";
-            tlProjLeavePage.restart();
+            scrollToTop();
             setTimeout(function() {
-                scrollToTop();
-            },0.05);
+                tlProjLeavePage.restart();
+            },0);
         })
 
         function touchStartEnterHandler() {

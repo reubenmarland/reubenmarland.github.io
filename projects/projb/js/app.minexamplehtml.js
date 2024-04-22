@@ -1,3 +1,4 @@
+document.getElementById('html-code').textContent = `
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.minhome.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Reuben Marland CV and Portfolio Website</title>
   <meta name="robots" content="all">
   <meta name="keywords"
@@ -19,6 +20,8 @@
 </head>
 
 <body>
+  <div class="loader default"><strong>RM</strong><div class="loader-cover-one"></div><div class="loader-cover-two"></div></div>
+  <div id="bodyHide">
     <div>
       <div class="logo-underlay">
       </div>
@@ -30,7 +33,7 @@
           <strong>Reuben Marland</strong>
         </div>
         <div class="">
-          <strong><span id="home">Home</span></strong>
+          <strong><span id="go-home">Home</span></strong>
         </div>
       </div>
     </div>
@@ -61,7 +64,7 @@
               <span class="animate-line default">knowledge to further broaden his skills.</span>
             </div>
             <div class="line-divide">
-              <span class="animate-line default">His ambition drives him to want to</span>
+              <span class="animate-line default">His ambition pushes him to want to</span>
             </div>
             <div>
               <span class="animate-line default">lead teams of individuals who</span>
@@ -92,6 +95,31 @@
             <div class="hero-rhs">
               <span class="animate-line default">Updated on April 09, 2024.</span>
             </div>
+            <div class="hero-rhs line-divide">
+              <span class="animate-line default"><strong>University of Bristol</strong></span>
+            </div>
+            <div class="hero-rhs">
+              <span class="animate-line default"><strong>MEng Mechanical Engineering</strong></span>
+            </div>
+            <div class="hero-rhs">
+              <span class="animate-line default">1st or high 2:1</span>
+            </div>
+            <div class="hero-rhs line-divide">
+              <span class="animate-line default"><strong>d'Overbroecks</strong></span>
+            </div>
+            <div class="hero-rhs">
+              <span class="animate-line default"><strong>A-Levels</strong></span>
+            </div>
+            <div class="hero-rhs">
+              <span class="animate-line default">A* Mathematics</span>
+            </div>
+            <div class="hero-rhs">
+              <span class="animate-line default">A* Further Mathematics</span>
+            </div>
+            <div class="hero-rhs">
+              <span class="animate-line default">A* Physics</span>
+            </div>
+            
           </div>
           <div class="hero-col hero-add"></div>
         </div>
@@ -100,7 +128,7 @@
         <div class="project-list">
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proja-click"><img src="../img/proja_card.png" alt="" id="proja-img">
+            <div class="card" id="proja-click"><img src="./img/proja_card.png" alt="" id="proja-img">
               <div class="text default proj-column">
                 <div>
                   <span class="proja-line default project-title">Digital Twin for Agri-tech</span>
@@ -110,7 +138,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projb-click"><img src="../img/projb_card.png" alt="" id="projb-img">
+            <div class="card" id="projb-click"><img src="./img/projb_card.png" alt="" id="projb-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projb-line default project-title">Portfolio Website</span>
@@ -120,7 +148,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projc-click"><img src="../img/projc_card.jpg" alt="" id="projc-img">
+            <div class="card" id="projc-click"><img src="./img/projc_card.jpg" alt="" id="projc-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projc-line default project-title">Feasibility Report on SAFs</span>
@@ -130,7 +158,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projd-click"><img src="../img/projd_card.jpg" alt="" id="projd-img">
+            <div class="card" id="projd-click"><img src="./img/projd_card.jpg" alt="" id="projd-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projd-line default project-title">Shape Drawing 2DoF Robotic Arm</span>
@@ -140,7 +168,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proje-click"><img src="../img/proje_card.png" alt="" id="proje-img">
+            <div class="card" id="proje-click"><img src="./img/proje_card.png" alt="" id="proje-img">
               <div class="text default proj-column">
                 <div>
                   <span class="proje-line default project-title">Business Pitch for Food App</span>
@@ -150,17 +178,17 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projf-click"><img src="../img/projf_card.png" alt="" id="projf-img">
+            <div class="card" id="projf-click"><img src="./img/projf_card.png" alt="" id="projf-img">
               <div class="text default proj-column">
                 <div>
-                  <span class="projf-line default project-title">Production Optmisation for a Door Damper</span>
+                  <span class="projf-line default project-title">Production Optmisation for a Door Damper:</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projg-click"><img src="../img/projg_card.png" alt="" id="projg-img">
+            <div class="card" id="projg-click"><img src="./img/projg_card.png" alt="" id="projg-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projg-line default project-title">Design of a Bespoke E-Reader</span>
@@ -170,7 +198,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projh-click"><img src="../img/projh_card.png" alt="" id="projh-img">
+            <div class="card" id="projh-click"><img src="./img/projh_card.png" alt="" id="projh-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projh-line default project-title">Ethical Business Assesment</span>
@@ -180,7 +208,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="proji-click"><img src="../img/proji_card.png" alt="" id="proji-img">
+            <div class="card" id="proji-click"><img src="./img/proji_card.png" alt="" id="proji-img">
               <div class="text default proj-column">
                 <div>
                   <span class="proji-line default project-title">Fluid-dynamics Models</span>
@@ -190,7 +218,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projj-click"><img src="../img/projj_card.png" alt="" id="projj-img">
+            <div class="card" id="projj-click"><img src="./img/projj_card.png" alt="" id="projj-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projj-line default project-title">Dynamics and Control Models</span>
@@ -200,7 +228,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projk-click"><img src="../img/projk_card.JPG" alt="" id="projk-img">
+            <div class="card" id="projk-click"><img src="./img/projk_card.JPG" alt="" id="projk-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projk-line default project-title">Applied Solid Mechanics Analysis</span>
@@ -210,7 +238,7 @@
           </div>
           <div class="overflow-hidden animate-line default">
             <div class="projects-counter"></div>
-            <div class="card" id="projl-click"><img src="../img/projl_card.png" alt="" id="projl-img">
+            <div class="card" id="projl-click"><img src="./img/projl_card.png" alt="" id="projl-img">
               <div class="text default proj-column">
                 <div>
                   <span class="projl-line default project-title">Design of a Convertible Car Roof</span>
@@ -247,12 +275,13 @@
         <span class="default"><br class="break-line">All rights reserved, Reuben Marland ©2024</span>
       </div>
     </footer>
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/CustomEase.min.js"></script>
-    <script src="../js/app.gohome.js"></script>
-    <script src="../Home/js/app.minhome.js"></script>
-    <script src="../js/app.projcard.js"></script>
-    <script src="../js/app.minsubloader.js"></script>
+    <script src="./js/app.minloader.js"></script>
+    <script src="./js/app.gohome.js"></script>
+    <script src="./js/app.projcard.js"></script>
+
 </body>
-</html>
+</html>`;

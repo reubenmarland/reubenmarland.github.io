@@ -48,15 +48,15 @@ var loadPage = {
             translateY: "-90px",
             ease: "strongEaseInOut",
             duration: 2,
-        }, 0).to(".loader-cover-two", {
+        }, 0.5).to(".loader-cover-two", {
             translateY: "-90px",
             ease: "strongEaseInOut",
             duration: 2,
-        }, 3).to({}, {
+        }, 3.5).to({}, {
             onComplete: function() {
                 enableScroll()
             }
-        },3).to(".loader", {
+        }, 3.5).to(".loader", {
             opacity: 0,
             ease: "easeOutExpo",
             onComplete: function() {
@@ -66,10 +66,10 @@ var loadPage = {
                     bodyHide.style.overflow = "visible !important"
                 },0.1)
             }
-        }, 3.5).to([".logo", ".availability"], {
+        }, 4).to([".logo", ".availability"], {
             opacity: 1,
             ease: "easeInExpo"
-        }, 3.5).to(".animate-line", {
+        }, 4).to(".animate-line", {
             x: 0,
             y: 0,
             z: 0,
@@ -78,7 +78,7 @@ var loadPage = {
             stagger: {
                 each: 0.05
             }
-        }, 3.5)
+        }, 4)
     }
 }
 
