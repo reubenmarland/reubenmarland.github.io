@@ -1,4 +1,22 @@
-.carda {
+/* .card-a {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
+
+.card-e {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+}
+
+.card-f {
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 3;
+    overflow: hidden !important;
+    overflow-wrap: hidden !important;
+    align-items: start;
+}
+
+.card-img-wrapper, .card-f{
+    margin: 0 !important;
+    align-items: start;
+} */
