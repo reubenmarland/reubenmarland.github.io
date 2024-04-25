@@ -133,25 +133,38 @@ code {
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(7, 20vw);
+    grid-auto-rows: 20vw;
     gap: 10px;
 }
 
 .gallery-card {
-width: 100%;
-aspect-ratio: 1;
-overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
 }
 
 .card-image-wrapper {
-height: 600px;
-will-change: transform;
+    height: 600px;
+    will-change: transform;
 }
 
 .card-image {
-width: 100%;
-height: 100%;
-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pdf-ctn {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 65vw;
+    overflow: hidden;
+}
+
+.pdf {
+    width: 45vw;;
 }
 
 .footer {
