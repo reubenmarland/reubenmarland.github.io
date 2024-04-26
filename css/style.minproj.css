@@ -135,6 +135,7 @@ code {
     grid-template-columns: repeat(3, 20vw);
     grid-auto-rows: 20vw;
     gap: 10px;
+    margin-bottom: 5vw;
 }
 
 .gallery-card {
