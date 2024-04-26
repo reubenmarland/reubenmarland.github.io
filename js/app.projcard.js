@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }).to({}, {
             duration: 0,
             onComplete: function() {
-                window.location.href = "../projects/" + cardId + "/" + cardId + ".html";
+                window.location.href = "../projects/" + cardId + "/proj.html";
             }
         });
 

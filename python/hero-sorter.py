@@ -28,10 +28,10 @@ def split_text(text, max_length=50):
 def create_txt(lines):
     txt_output = ""
     for line in lines:
-        txt_output += f"<div><span class=\"animate-line default\">{line}</span></div>\n"
+        txt_output += f"<div class=\"hero-rhs\"><span class=\"animate-line default\">{line}</span></div>\n"
     return txt_output
 
-text = "The app’s financial model is designed to be mutually beneficial; it uses a profit-sharing strategy where revenues from sold meals are split between \"Still Tasty\" and the participating restaurants. This encourages more restaurants to join the platform, thereby expanding our serviceable market. The project was not only a technical challenge but also an intensive market analysis exercise, requiring us to engage directly with potential clients and conduct detailed financial planning. The app’s development was planned in stages, starting with design and moving through development, affiliate acquisition, public launch, and expansion. We projected the financial break-even point to occur by the second year, factoring in initial development costs and ongoing operational expenses."
+text = "This project not only exemplified innovative engineering solutions to real-world problems but also highlighted the importance of interdisciplinary skills, including digital design, cost management, and sustainable engineering principles. The project culminated in a detailed evaluation of the design, manufacturing feasibility, and operational testing, setting the stage for potential future deployment and real-world impact."
 
 lines = split_text(text, 50)
 txt_result = create_txt(lines)
