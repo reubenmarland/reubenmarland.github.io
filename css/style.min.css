@@ -194,6 +194,11 @@ main {
     pointer-events: none;
 }
 
+.card-template {
+    border: none !important;
+    display: none !important;
+}
+
 #proja-img, #proja-img-post {
     opacity: 1;
     transition: opacity 0.5s;

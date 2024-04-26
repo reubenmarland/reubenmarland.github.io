@@ -31,7 +31,7 @@ def create_txt(lines):
         txt_output += f"<div class=\"hero-rhs\"><span class=\"animate-line default\">{line}</span></div>\n"
     return txt_output
 
-text = "This project not only exemplified innovative engineering solutions to real-world problems but also highlighted the importance of interdisciplinary skills, including digital design, cost management, and sustainable engineering principles. The project culminated in a detailed evaluation of the design, manufacturing feasibility, and operational testing, setting the stage for potential future deployment and real-world impact."
+text = "For a formative task set in 2nd year, we had to complete the design of a rear axel for an ATV. My role on this project was to complete the CAD design and generate technical drawings. This was the first time I had used Fusion 360 as a strictly mechanical tool, incorporating parts with tight tolerances, as well as integrating motion links. This project laid a foundation for future mechanical CAD design, that will include joints, motion-links and realistic design."
 
 lines = split_text(text, 50)
 txt_result = create_txt(lines)
