@@ -1,39 +1,29 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 25 16:25:07 2024
+def digit_to_roman(digit, one, five, ten):
 
-@author: reube
-"""
+    if digit == 9:
+        return one + ten
+    elif digit >= 5:
+        return five + (one * (digit - 5))
+    elif digit == 4:
+        return one + five
+    else:
+        return one * digit
 
-def split_text(text, max_length=50):
-    words = text.split()
-    current_line = ""
-    lines = []
-    
-    for word in words:
-        
-        if len(current_line) + len(word) + 1 > max_length:
-            lines.append(current_line)
-            current_line = word
-        else:
-            if current_line:
-                current_line += " "
-            current_line += word
-            
-    if current_line:
-        lines.append(current_line)
-        
-    return lines
+def convert_to_roman(input):
 
-def create_txt(lines):
-    txt_output = ""
-    for line in lines:
-        txt_output += f"<div class=\"hero-rhs\"><span class=\"animate-line default\">{line}</span></div>\n"
-    return txt_output
+    digit1 = (input) % 10
+    digit2 = (((input) % 100) - digit1) // 10
+    digit3 = (((input) % 1000) - digit2 - digit1) // 100
+    digit4 = (((input) % 10000) - digit3 - digit2 - digit1) // 1000
 
-text = "For a formative task set in 2nd year, we had to complete the design of a rear axel for an ATV. My role on this project was to complete the CAD design and generate technical drawings. This was the first time I had used Fusion 360 as a strictly mechanical tool, incorporating parts with tight tolerances, as well as integrating motion links. This project laid a foundation for future mechanical CAD design, that will include joints, motion-links and realistic design."
+    thousands_roman = "M" * digit4
+    hundreds_roman = digit_to_roman(digit3, "C", "D", "M")
+    tens_roman = digit_to_roman(digit2, "X", "L", "C")
+    units_roman = digit_to_roman(digit1, "I", "V", "X")
 
-lines = split_text(text, 50)
-txt_result = create_txt(lines)
+    roman_numeral = thousands_roman + hundreds_roman + tens_roman + units_roman
 
-print(txt_result)
+    print(roman_numeral)
+
+
+convert_to_roman(70) 
